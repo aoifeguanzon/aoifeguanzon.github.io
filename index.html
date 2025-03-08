@@ -12,58 +12,28 @@
 <body>
 
     <main>
-        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
-            <a href="#about" class="nav-link">About Me</a>
-            <a href="#work" class="nav-link">Work Experience</a>
+        <nav class="page-nav"> 
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
             <a href="#images" class="nav-link">Image Gallery</a>
             <a href="#contact" class="nav-link">Contact Me</a>
         </nav>
-	    <header class="page-header">  <!-- The <header> tag defines a section at the top of a page or section that typically contains introductory content, like a logo, navigation links, or a heading.-->
-            <div class="header-content">  <!-- The <div> tag is a generic container used to group together sections of content or elements, allowing for easier styling and layout control with CSS.-->
+	    <header class="page-header">  
+            <div class="header-content"> 
                 <h1>Aoife Guanzon</h1>
                 <h3>Undergraduate Computer Science Student at DCU</h3>
             </div>
         </header>
 
-    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
-        <section id="about" class="about-me-container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
-            <h2>About Me</h2>
-            <div class="buttons">
-                <a href="https://www.instagram.com/" class="social-media">Instagram</a>
-                <a href="https://ie.linkedin.com/" class="social-media">Linkedin</a>
-            </div>
-            <div class="content">
-                <p>I am a 19 year old First Year undergraduate student from Meath studying Computer Science in DCU. I also studied Computer Science in secondary school, for both the Junior and Leaving Cert. I have had an interest in programming for a few years now and I look forward to having a career in the technology sector. I have had multiple years' experience with Python, HTML and CSS. Above are links to my social media.</p>
-            </div>
+        <section id="home" class="home-container">
+		
         </section>
 
-        <section id="work" class="work-experience-container">
-            <h2>Work Experience</h2>
-            <div class="subheading-container">
-                <h3><a class="job-link" href="https://stackspharmacy.ie/">Bettystown Pharmacy</a></h3>
-                <h4>Pharmacy Assistant</h4>
-            </div>
-                <ul>
-                    <li>Provided friendly and knowledgeable assistance to customers in selecting products.</li>
-                    <li>Assisted pharmacists in managing patient information confidentially.</li>
-                    <li>Stocked and labelled products to ensure easy access and availability.</li>
-                    <li>Set up promotional displays to attract customer attention and drive sales.</li>
-                    <li>Monitored inventory levels and reported low stock to management.</li>
-                </ul>
-                <div class="subheading-container">
-                    <h3><a class="job-link" href="https://www.realtnamaradonacarney.ie/">Réalt na Mara GNS</a></h3>
-                    <h4>Teaching Assistant</h4>
-                </div>
-                <ul>
-                    <li>Assisted in organising fun and educational activities for students in different classrooms as well as the special needs unit, fostering a supportive and engaging environment.</li>
-                    <li>Helped correct students' work and provided constructive feedback to encourage learning and growth.</li>
-                    <li>Collaborated with teachers to prepare classroom materials and set up learning spaces, enhancing the educational experience for students.</li>
-                    <li>Supported individual students during activities, promoting social interaction and skill development.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="images">
+        <section id="about" class="about-container">
+           
+	</section>
+	<!--
+        <section id="images" class="images-container">
             <div class="image-heading">
                     <h2>Image Gallery</h2>
             </div>
@@ -89,7 +59,6 @@
             <h2>Contact Me</h2>
             <div class="form-section">
                 <form action="https://formspree.io/[your email address goes here]" method="post">
-                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
                         <label for="contact-name">Name:</label><br>
                         <input id="contact-name" type="text" name="contact-name" /><br>
                         <label for="contact-email">Email Address:</label><br>
@@ -102,19 +71,8 @@
                 </form>
             </div>
         </section>
+	-->
         <footer id ="footer-layout">
-              <h5"> &copy; <a href="dcu.ie/">DCU 2023-2024</a>
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text">Aoife Guanzon</span>
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text">This is student coursework</span>
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text">Lecturer: <a href="http://www.computing.dcu.ie/~mscriney">Michael Scriney</a></span>
-				<span class="footer-separator">&middot;</span>
-				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span>
-        </h5>
-        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
-
         </footer>
     </main>
 </body>
