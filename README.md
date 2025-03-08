@@ -1,3 +1,3 @@
 # Aoife Guanzon
 
-- My website
+- This is my portfolio.
