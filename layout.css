@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -9,6 +9,9 @@ html{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* Header */
 header{
@@ -22,11 +25,11 @@ header{
 }
 
 .intro{
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 .desc{
-    font-size: 4em;
+    font-size: 8vw;
     font-weight: 800;
 }
 
@@ -43,6 +46,7 @@ nav{
     width: fit-content;
     justify-self: center;
     margin: 2rem 0;
+    font-size: 4vw;
 }
 
 .nav-link{
@@ -59,7 +63,7 @@ nav{
 /* Content */
 body {
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     background: radial-gradient(circle, #FF7AA2, #FF9EBB, #FFC2D4, #E05780);
     background-size: 400% 400%;
     animation: radialGradientAnimation 10s ease infinite;
@@ -78,6 +82,11 @@ body {
     }
   }
 
+.skills {
+    column-count: 2;
+    column-gap: 20px; 
+}
+
 /* Text */
 .number{
     font-family: monospace;
@@ -89,7 +98,7 @@ p{
     font-weight: 500;
 }
 
-li{
+.footer-links{
     list-style-type: none;
 }
 
