@@ -46,7 +46,6 @@ nav{
     width: fit-content;
     justify-self: center;
     margin: 2rem 0;
-    font-size: 1.5vw;
 }
 
 .nav-link{
@@ -54,6 +53,7 @@ nav{
     color: #FFE0E9;
     border-radius: 2rem;
     padding: 0.5rem;
+    font-size: 80%
 }
 
 .nav-link:hover{
