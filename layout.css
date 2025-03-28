@@ -64,7 +64,7 @@ nav{
 body {
     margin: 0 auto;
     min-height: 100vh;
-    background: radial-gradient(circle, #FF7AA2, #FF9EBB, #FFC2D4, #E05780);
+    background: radial-gradient(circle, #9b2045, #FF9EBB, #FFC2D4, #E05780);
     background-size: 400% 400%;
     animation: radialGradientAnimation 10s ease infinite;
     width: 80%;
