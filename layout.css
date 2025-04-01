@@ -132,6 +132,7 @@ form{
     align-items: center;
     gap: 1rem;
     width: min-content;
+    margin: 0 auto;
     font-weight: 600;
 }
 
