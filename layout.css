@@ -97,7 +97,7 @@ body {
 
 .skills li {
     flex: 1 1 calc(50% - 10px);
-    text-align: left;
+    display: list-item;
 }
 
 /* On small screens, make it one column */
