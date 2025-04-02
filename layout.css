@@ -82,9 +82,33 @@ body {
     }
   }
 
-.skills {
-    column-count: 2;
-    column-gap: 20px; 
+.skills-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.skills li {
+    flex: 1 1 calc(50% - 10px);
+    background: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* On small screens, make it one column */
+@media (max-width: 500px) {
+    .skills-list li {
+        flex: 1 1 100%;
+    }
 }
 
 /* Text */
