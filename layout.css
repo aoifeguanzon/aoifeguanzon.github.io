@@ -88,20 +88,16 @@ body {
     padding: 10px;
 }
 
-.skills{
+.skills {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     padding: 0;
     gap: 10px;
 }
 
 .skills li {
     flex: 1 1 calc(50% - 10px);
-    background: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
+    text-align: left;
 }
 
 /* On small screens, make it one column */
