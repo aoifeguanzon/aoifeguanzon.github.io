@@ -117,6 +117,7 @@ i{
 
 /* Contact */
 .form-container{
+    display: -webkit-flex;
     justify-items: center;
     margin: 0 auto;
 }
