@@ -1,1 +1,1 @@
-This is my personal portfolio on which I will showcase all projects I make in the future.
+This is my personal portfolio in which I will showcase all projects I make in the future.
