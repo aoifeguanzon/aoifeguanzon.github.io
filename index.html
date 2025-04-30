@@ -16,7 +16,10 @@
     <body>
         <main>
             <header id="home">
-                <h1 class="intro">Hi, I'm <span class=name>Aoife</span>.</h1>
+                <h1 class="intro">
+                    <span id="intro-text"></span><span id='name'></span>
+                    <span id="cursor" class="cursor">|</span>
+                </h1>
                 <h1 class="desc">I'm a Computer Science student in Dublin. </h1>
                 <nav>
                     <a href="#about" class="nav-link">About</a>
@@ -30,28 +33,26 @@
                 <p>Hi, my name is Aoife and I'm in my first year of college studying Computer Science.
                     I've had a genuine passion for programming ever since I was a child making games on Scratch and Hopscotch. Since then I've continued coding in my spare time, picking up Python, Javascript and Swift on my own.
                     I enjoy all things related to computing and I am keen on exploring different areas of this field.<br><br>
-                    Some of my interests include:
+                    My main interests are:
                 </p>
                 <ul>
                     <li>Software engineering</li>
-                    <li>Machine learning and artificial intelligence</li>
                     <li>Web development</li>
-                    <li>UI/UX design</li>
-                    <li>Game development</li>
-                    <li>Data analysis</li>
+                    <li>UX/UI design</li>
                 </ul>
-                <p>Here are a few of my skills:</p>
+                <p>My technical skills include:</p>
                 <div class="skills-container">
                     <ul class="skills">
-                        <li>Python (incl. libraries like Pandas, Matplotlib)</li>
+                        <li>Python</li>
                         <li>Javascript</li>
                         <li>React.js</li>
-                        <li>Micro:Bit</li>
-                        <li>Swift</li>
+                        <li>Swift / SwiftUI</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Bootstrap</li>
-                        <li>Git / Github</li>
+                        <li>PHP</li>
+                        <li>WordPress</li>
+                        <li>Git</li>
                         <li>Linux</li>
                         <li>Shell scripting</li>
                         <li>Solidworks</li>
@@ -61,25 +62,29 @@
 
             <section id="projects">
                 <h2><span class="number">02.</span>Things I've built</h2>
-                <p>Nothing to see here yet...</p>
+                <p>Nothing to see here yet...but here's what I'm doing at the moment:</p>
+                <ul>
+                    <li>Building an iOS app using Swift and SwiftUI to help students optimize their study sessions by using personalised study schedules and providing gamified progress visualizations with rewards for goal achievements.</li>
+                    <li>Learning SQL by building a web app with APIs to organize a book catalog database, allowing users to query books by author, genre, publication year, and create custom reading lists based on their preferences.</li>
+                </ul>
                 </section>
 
             <section id="contact">
                 <h2><span class="number">03.</span>What's next?</h2>
-                <p>As a first year student in college who is eager to apply my knowledge and learn, I am open to any opportunities! Please reach out below! </p>
+                <p>As a first year student in college who is eager to apply my knowledge and learn in real-life settings, I am open to any opportunities. Please reach out below! </p>
                 <div class="form-container">
                     <form action="https://formspree.io/f/mldjrppw" method="POST">
                         <label>
                             Name:
-                            <input type="text" name="name">
+                            <input type="text" name="name" placeholder="What's your name?">
                         </label>
                         <label>
                             Email:
-                            <input type="email" name="email">
+                            <input type="email" name="email" placeholder="What's your email?">
                         </label>
                         <label>
                             Message:
-                            <textarea name="message"></textarea>
+                            <textarea name="message" placeholder="Type your message here"></textarea>
                         </label>
                         <button type="submit">Send</button>
                     </form>
@@ -89,11 +94,12 @@
             <footer id="footer" class="footer-layout">
                 <div>© 2025 Aoife Guanzon</div>
                 <ul class="footer-links">
-                    <li><i class="fa-brands fa-github"></i><a class='footer-link' href="https://github.com/aoifeguanzon">Github</a></li>
-                    <li><i class="fa-brands fa-linkedin"></i><a class='footer-link' href="https://www.linkedin.com/in/aoife-g-93aa83235">Linkedin</a></li>
+                    <li class='footer-link'><i class="fa-brands fa-github"></i><a class='footer-link' href="https://github.com/aoifeguanzon">Github</a></li>
+                    <li class='footer-link'><i class="fa-brands fa-linkedin"></i><a class='footer-link' href="https://www.linkedin.com/in/aoife-g-93aa83235">Linkedin</a></li>
                 </ul>
             </footer>
 
         </main>
+        <script src="scripts.js"></script>
     </body>
 </html>
