@@ -146,6 +146,14 @@ textarea{
     max-height: fit-content;
 }
 
+input, textarea{
+    padding: 0.5rem
+}
+
+::placeholder{
+    font-size: 1.5em;
+}
+
 input, textarea, button{
     border-style: none;
     font-family: 'Quicksand';
