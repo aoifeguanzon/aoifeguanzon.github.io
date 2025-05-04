@@ -34,11 +34,11 @@ header{
 }
 
 .intro{
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 .desc{
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 800;
     opacity: 0;
     transform: translateY(20px);
