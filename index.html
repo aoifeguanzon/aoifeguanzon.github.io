@@ -8,32 +8,50 @@
         <title>Aoife Guanzon</title>
         <link type="text/css" rel="stylesheet" href="layout.css" />
         <script src="https://kit.fontawesome.com/137f708b89.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
     </head>
 
     <body>
-        <nav class="nav-hidden">
-            <span class="nav-section"><span class="number">01.</span><a href="#about" class="nav-link">About Me</a></span>
-            <span class="nav-section"><span class="number">02.</span><a href="#projects" class="nav-link">Projects</a></span>
-            <span class="nav-section"><span class="number">03.</span><a href="#contact" class="nav-link">Contact</a></span>
-            <span class="nav-section"><a class="cv" href="https://drive.google.com/file/d/100GcVBbn3Go541pQOfk-QF1Nya4TUG0_/view?usp=sharing">My CV</a></span>
-        </nav>
         <main>
-            <header id="home">
-                <h1 class="intro">
-                    <span id="intro-text"></span><span id='name'></span>
-                </h1>
-                <h1 class="desc">I'm an aspiring Software Engineer.</h1>
-            </header>
+            <div class="head">
+                <nav>
+                    <button id="nav-toggle" class="nav-toggle">☰</button>
+                    <div class="nav-sections">
+                    <span class="nav-section">
+                        <span class="number">01.</span>
+                        <a href="#about" class="nav-link">About Me</a>
+                    </span>
+                    <span class="nav-section">
+                        <span class="number">02.</span>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </span>
+                    <span class="nav-section">
+                        <span class="number">03.</span>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </span>
+                    <span class="nav-section">
+                        <a class="cv" href="https://drive.google.com/file/d/100GcVBbn3Go541pQOfk-QF1Nya4TUG0_/view">My CV</a>
+                    </span>
+                    </div>
+                </nav>                  
+            
+                <header>
+                    <h1 class="intro">
+                        <span id="intro-text"></span><span id='name'></span>
+                    </h1>
+                    <h1 class="desc">I'm an aspiring Software Engineer.</h1>
+                </header>
+            </div>
 
             <section id="about">
                 <h2><span class="number">01.</span>About me</h2>
-                <p>I'm in a first year Computer Science student in Ireland.
-                    I've had a genuine passion for programming ever since I was a child making games on Scratch.
-                    Ever since then I've continued coding in my spare time, picking up Python, Javascript and Swift on my own.
-                    I'm interested in learning Full-Stack Development, Mobile App Development and Game Development.
+                <p>I'm a first-year Computer Science student in Ireland with a long-standing passion for programming. 
+                    I began coding as a child by creating games on Scratch, and that curiosity has grown into a deep interest in Software Development. 
+                    Ever since then I've continued coding in my spare time, eventually picking up languages like Python, Javascript and Swift on my own.
+                    I'm especially interested in Full-Stack Development, Mobile App Development, Game Development and UI/UX Design.
                 </p>
                 <h3>My technical skills include:</h3>
                 <div class="skills-container">
@@ -48,6 +66,17 @@
                         <li><i class="fa-brands fa-wordpress"></i>WordPress</li>
                         <li><i class="fa-brands fa-git"></i>Git</li>
                         <li><i class="fa-brands fa-linux"></i>Linux</li>
+                    </ul>
+                </div>
+                <h3>The platforms and tools I use are:</h3>
+                <div class="skills-container">
+                    <ul class="skills">
+                            <li><i class="fa-brands fa-figma"></i>Figma</li>
+                            <li><i class="fa-brands fa-trello"></i>Trello</li>
+                            <li><i class="fa-brands fa-slack"></i>Slack</li>
+                            <li><i class="lni lni-firebase"></i>Firebase</li>
+                            <li><i class="lni lni-notion"></i>Notion</li>
+                            <li><i class="fa-brands fa-github"></i>Github</li>
                     </ul>
                 </div>
                 <p>Other than programming, I love playing guitar and violin, making art, volunteering in my local community, and travelling.</p>
@@ -79,7 +108,7 @@
                             Message:
                             <textarea name="message" placeholder="Your message..."></textarea>
                         </label>
-                        <button type="submit">Send</button>
+                        <button class='submit' type="submit">Send</button>
                     </form>
                 </div>
             </section>
