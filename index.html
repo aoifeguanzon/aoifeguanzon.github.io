@@ -9,30 +9,32 @@
         <link type="text/css" rel="stylesheet" href="layout.css" />
         <script src="https://kit.fontawesome.com/137f708b89.js" crossorigin="anonymous"></script>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
     </head>
 
     <body>
+        <nav class="nav-hidden">
+            <span class="nav-section"><span class="number">01.</span><a href="#about" class="nav-link">About Me</a></span>
+            <span class="nav-section"><span class="number">02.</span><a href="#projects" class="nav-link">Projects</a></span>
+            <span class="nav-section"><span class="number">03.</span><a href="#contact" class="nav-link">Contact</a></span>
+            <span class="nav-section"><a class="cv" href="https://drive.google.com/file/d/100GcVBbn3Go541pQOfk-QF1Nya4TUG0_/view?usp=sharing">My CV</a></span>
+        </nav>
         <main>
             <header id="home">
                 <h1 class="intro">
                     <span id="intro-text"></span><span id='name'></span>
-                    <span id="cursor" class="cursor">|</span>
                 </h1>
-                <h1 class="desc">I'm a Computer Science student in Dublin </h1>
-                <nav class="nav-hidden">
-                    <a href="#about" class="nav-link">About Me</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
+                <h1 class="desc">I'm an aspiring Software Engineer.</h1>
             </header>
 
             <section id="about">
                 <h2><span class="number">01.</span>About me</h2>
-                <p>Hi, my name is Aoife and I'm in my first year of college studying Computer Science.
-                    I've had a genuine passion for programming ever since I was a child making games on Scratch and Hopscotch. Since then I've continued coding in my spare time, picking up Python, Javascript and Swift on my own.
-                    I am interested in Software Engineering and currently seeking experience in this field.</p>
+                <p>I'm in a first year Computer Science student in Ireland.
+                    I've had a genuine passion for programming ever since I was a child making games on Scratch.
+                    Ever since then I've continued coding in my spare time, picking up Python, Javascript and Swift on my own.
+                    I'm interested in learning Full-Stack Development, Mobile App Development and Game Development.
+                </p>
                 <h3>My technical skills include:</h3>
                 <div class="skills-container">
                     <ul class="skills">
@@ -48,29 +50,30 @@
                         <li><i class="fa-brands fa-linux"></i>Linux</li>
                     </ul>
                 </div>
+                <p>Other than programming, I love playing guitar and violin, making art, volunteering in my local community, and travelling.</p>
             </section>
 
             <section id="projects">
                 <h2><span class="number">02.</span>Things I've built</h2>
-                <p>Nothing to see here yet...but here's what I'm doing at the moment:</p>
+                <p>Nothing to see yet... but here's what I'm doing at the moment:</p>
                 <ol>
-                    <li>Building an iOS app using Swift and SwiftUI to help students optimize their study sessions by using personalised study schedules and providing gamified progress visualizations with rewards for goal achievements.</li>
+                    <li>Building an iOS app using Swift and SwiftUI to help students optimise their study sessions by creating personalised study schedules and providing gamified progress visualisations with rewards for goal achievements.</li>
                     <br><li>Learning SQL by building a web app with APIs to organise a book catalog database, allowing users to query books by author, genre, publication year, and create custom reading lists based on their preferences.</li>
                 </ol>
                 </section>
 
             <section id="contact">
                 <h2><span class="number">03.</span>What's next?</h2>
-                <p>As a first year student in college who is eager to apply my skills and learn, I am open to any opportunities. Please reach out below! </p>
+                <p>As a first-year college student, I'm eager to learn from experienced professionals, attend networking events, and connect with new people. I'm passionate about growing my skills, exchanging ideas and making a meaningful impact. Please reach out below!</p>
                 <div class="form-container">
                     <form action="https://formspree.io/f/mldjrppw" method="POST">
                         <label>
                             Name:
-                            <input type="text" name="name" placeholder="Your name">
+                            <input class='hi'type="text" name="name" placeholder="Enter your name">
                         </label>
                         <label>
                             Email:
-                            <input type="email" name="email" placeholder="Your email">
+                            <input type="email" name="email" placeholder="Enter your email">
                         </label>
                         <label>
                             Message:
