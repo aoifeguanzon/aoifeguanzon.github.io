@@ -108,18 +108,20 @@ nav {
   display: none;
 }
 
-.nav-toggle.active {
-  color: #e6ffc8;
-}
-
 .nav-sections {
   display: flex;
   gap: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
   nav {
     flex-direction: column;
+  }
+
+  nav.nav-expanded {
+    background-color: #101d01;
+    margin-bottom: 2rem;
+    color: #e6ffc8;
   }
 
   .nav-toggle {
