@@ -2,6 +2,8 @@ const textSpan = document.getElementById('intro-text');
 const nameSpan = document.getElementById('name');
 const desc = document.querySelector('.desc');
 const nav = document.querySelector('nav');
+const toggle = document.getElementById('nav-toggle');
+const sections = document.querySelector('.nav-sections');
 
 const introText = "Hi, my name is ";
 const nameText = "Aoife 👋🏼";
@@ -29,6 +31,11 @@ function typeWriter() {
     }, 40);
   }
 }
+
+toggle.addEventListener('click', () => {
+  sections.classList.toggle('show');
+  toggle.classList.toggle('active');
+});
 
 window.addEventListener('DOMContentLoaded', () => {
   typeWriter();
