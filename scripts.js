@@ -34,7 +34,7 @@ function typeWriter() {
 
 toggle.addEventListener('click', () => {
   sections.classList.toggle('show');
-  toggle.classList.toggle('active');
+  nav.classList.toggle('nav-expanded');
 });
 
 window.addEventListener('DOMContentLoaded', () => {
