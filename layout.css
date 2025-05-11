@@ -14,18 +14,19 @@ body::-webkit-scrollbar {
 }
 
 section {
-  margin: 5rem 0;
+  margin: 0rem 10% 5rem 10%
 }
 
-@media (min-width: 768px) {
-  section {
-    margin: 3rem 20%;
-  }
-}
 
 /* Header */
-header {
+.head {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.head > header {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,9 +68,12 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-align: right;
-  margin: 2rem 2rem 0 0;
   font-family: monospace;
+  padding: 1rem;
 }
 
 .nav-section {
@@ -100,10 +104,49 @@ nav {
   box-shadow: 3px 3px 0 #e6ffc8;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle.active {
+  color: #e6ffc8;
+}
+
+.nav-sections {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .nav-sections {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-sections.show {
+    display: flex;
+  }
+}
+
 /* Content */
 body {
   margin: 0 auto;
-  min-height: 100vh;
   background-color: #1d3403;
 }
 
@@ -261,7 +304,7 @@ textarea::placeholder {
   color: #4b54437e;
 }
 
-button {
+.submit {
   color: #1d3403;
   background-color: #e6ffc8;
   padding: 0.5rem;
@@ -270,7 +313,7 @@ button {
   font-weight: 550;
 }
 
-button:hover {
+.submit:hover {
   background-color: #b5d594;
 }
 
