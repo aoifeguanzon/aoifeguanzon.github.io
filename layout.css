@@ -44,11 +44,11 @@ header {
 .cursor {
   display: inline-block;
   color: white;
-  animation: blink 2s step-start infinite;
+  animation: blink 1s step-start infinite;
 }
 
 @keyframes blink {
-  50% {
+  25% {
     opacity: 0;
   }
 }
@@ -113,6 +113,10 @@ header {
   transform: translateY(0);
 }
 
+img{
+  border-radius: 10px;
+}
+
 /* Navigation */
 nav {
   display: flex;
@@ -139,19 +143,6 @@ nav.show {
 }
 .nav-link:hover {
   color: #e6ffc8;
-}
-.cv {
-  border: 0.1rem solid #e6ffc8;
-  border-radius: 0.2rem;
-  color: #e6ffc8;
-  padding: 0.5rem;
-  background-color: transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.cv:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: 3px 3px 0 #e6ffc8;
 }
 .nav-toggle {
   display: none;
@@ -291,18 +282,17 @@ nav.show {
   }
 }
 
-/* Cards */
+/* Grids and images */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-
 .card {
-  display: block; /* was flex */
-  width: 100%;
-  border-radius: 15px;
+  display: block;
   overflow: hidden;
+  box-shadow: 0 0 13px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 .card img {
@@ -310,11 +300,29 @@ nav.show {
   height: 300px;
   object-fit: cover;
   display: block;
+  transition: filter 0.3s ease;
 }
 
 .card img:hover {
-  filter: brightness(50%);
+  filter: brightness(50%) hue-rotate(20deg);
 }
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    height: auto;
+  }
+
+  .card img {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
 
 .image-grid-2 {
   column-count: 2;
@@ -401,11 +409,13 @@ textarea {
   min-height: 30vh;
   min-width: 40vw;
 }
-input, textarea {
+input, textarea, .submit {
   padding: 0.5rem;
   font-size: 0.8em;
   font-family: 'Montserrat';
   border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 13px rgb(0, 0, 0);
 }
 input::placeholder,
 textarea::placeholder {
@@ -413,23 +423,13 @@ textarea::placeholder {
 }
 .submit {
   background-color: #e6ffc8;
-  color: #1e3503;
-  padding: 0.5rem;
-  font-size: 0.8em;
+  color: black;
   font-weight: 550;
   transition: background-color 0.3s;
-  font-family: 'Montserrat';
-  border: none;
 }
 .submit:hover {
   background-color: #b5d594;
   cursor: pointer;
-}
-
-.important{
-  background-color: white;
-  color: #1e3503;
-  padding: 2rem;
 }
 
 /* Footer */
@@ -466,5 +466,6 @@ footer {
 
 .head-content img{
   width: 30vw;
+  box-shadow: 0 0 13px rgb(0, 0, 0);
 }
 

@@ -6,41 +6,53 @@ const toggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelectorAll('.nav-sections a');
 const navSections = document.querySelector('.nav-sections');
 const overlay = document.getElementById('overlay');
-const introText = "Hi, my name is ";
-const nameOnly = "Aoife ";
-const emoji = "👋🏼";
 
-nameSpan.style.color = "#e6ffc8";
+const introText = "Hi ";
+const nameOnly = " my name is ";
+const specialName = "Aoife";
+const emoji = " 👋🏼";
 
 let index = 0;
+let nameIndex = 0;
+let specialIndex = 0;
 
 function typeWriter() {
   if (index < introText.length) {
     textSpan.textContent = introText.substring(0, index + 1);
+
+    if (introText.substring(0, index + 1) === "Hi " && !document.querySelector(".wave")) {
+      const wave = document.createElement("span");
+      wave.className = "wave";
+      wave.textContent = emoji;
+      textSpan.appendChild(wave);
+    }
+
     index++;
     setTimeout(typeWriter, 50);
+
+  } else if (nameIndex < nameOnly.length) {
+    nameSpan.textContent = nameOnly.substring(0, nameIndex + 1);
+    nameIndex++;
+    setTimeout(typeWriter, 50);
+
+  } else if (specialIndex < specialName.length) {
+    if (!nameSpan.querySelector('.special-name')) {
+      const specialSpan = document.createElement('span');
+      specialSpan.className = 'special-name';
+      specialSpan.style.color = '#e6ffc8';
+      nameSpan.appendChild(specialSpan);
+    }
+
+    const specialSpan = nameSpan.querySelector('.special-name');
+    specialSpan.textContent = specialName.substring(0, specialIndex + 1);
+    specialIndex++;
+    setTimeout(typeWriter, 50);
+
   } else {
-    let nameIndex = 0;
-    const nameTypingInterval = setInterval(() => {
-      nameSpan.textContent = nameOnly.substring(0, nameIndex + 1);
-      nameIndex++;
-
-      if (nameIndex === nameOnly.length) {
-        clearInterval(nameTypingInterval);
-
-        setTimeout(() => {
-          const wave = document.createElement("span");
-          wave.className = "wave";
-          wave.textContent = emoji;
-          nameSpan.appendChild(wave);
-
-          setTimeout(() => {
-            desc.classList.add('show');
-            nav.classList.add('show');
-          }, 250);
-        }, 100);
-      }
-    }, 50);
+    setTimeout(() => {
+      desc.classList.add('show');
+      nav.classList.add('show');
+    }, 250);
   }
 }
 
