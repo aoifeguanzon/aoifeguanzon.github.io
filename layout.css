@@ -25,6 +25,7 @@ body::-webkit-scrollbar {
 }
 section {
   margin: 0rem 15%;
+  padding: 0;
 }
 
 .head {
@@ -115,6 +116,13 @@ header {
 
 img{
   border-radius: 10px;
+}
+
+.important{
+  background-color: #e6ffc8;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Navigation */
@@ -228,7 +236,6 @@ nav.show {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
 .skills {
   list-style: none;
@@ -252,6 +259,7 @@ nav.show {
   color: #e6ffc8;
   transition: transform 0.3s ease;
   margin: 0 auto;
+  text-shadow: 0 0 30px rgb(0, 0, 0);
 }
 .skills li:hover i {
   transform: scale(1.2);
@@ -304,7 +312,7 @@ nav.show {
 }
 
 .card img:hover {
-  filter: brightness(50%) hue-rotate(20deg);
+  filter: brightness(50%) blur(2px);
 }
 
 @media (max-width: 600px) {
@@ -350,8 +358,11 @@ nav.show {
 h2 .number {
   font-weight: 400;
 }
-h3 {
-  color: #b5d594;
+h3{
+  background-color: #e6ffc8;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #172b02;
 }
 h4 {
   font-size: 1.1em;
@@ -360,7 +371,7 @@ h4 {
 .number {
   font-family: monospace;
   font-size: 0.75em;
-  color: #e6ffc8;
+  color: #b5d594;
   margin-right: 0.5rem;
 }
 
@@ -399,7 +410,7 @@ label {
   flex-direction: column;
   gap: 0.5rem;
   font-size: 1.2em;
-  color: #b5d594;
+  color: #e6ffc8;
 }
 form {
   display: flex;
