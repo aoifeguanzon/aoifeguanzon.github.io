@@ -322,7 +322,11 @@ nav.show {
     width: 100%;
   }
 }
-
+.image-grid-1 {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 
 .image-grid-2 {
   column-count: 2;
