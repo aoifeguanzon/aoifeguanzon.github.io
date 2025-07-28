@@ -10,7 +10,7 @@ const overlay = document.getElementById('overlay');
 const introText = "Hi ";
 const nameOnly = " my name is ";
 const specialName = "Aoife";
-const emoji = " 👋🏼";
+const emoji = "👋🏼";
 
 let index = 0;
 let nameIndex = 0;
@@ -20,10 +20,11 @@ function typeWriter() {
   if (index < introText.length) {
     textSpan.textContent = introText.substring(0, index + 1);
 
-    if (introText.substring(0, index + 1) === "Hi " && !document.querySelector(".wave")) {
+    // Add emoji right after finishing "Hi"
+    if (index === introText.length - 1 && !document.querySelector(".wave")) {
       const wave = document.createElement("span");
       wave.className = "wave";
-      wave.textContent = emoji;
+      wave.textContent = emoji + " ";
       textSpan.appendChild(wave);
     }
 
