@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #1e3503;
+  background-color: #172b02;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -115,10 +115,13 @@ img{
 }
 
 .important{
-  border: 5px double #e6ffc8;
+  border: 1px solid #e6ffc8;
   color: #e6ffc8;
-  padding: 10px;
+  padding: 30px;
   border-radius: 5px;
+  text-align: center;
+  margin: 100px;
+  font-family: 'Space Grotesk';
 }
 
 /* Navigation */
@@ -298,7 +301,7 @@ nav.show {
 
 .card img {
   width: 100%;
-  height: 300px;
+  height: auto;
   object-fit: cover;
   display: block;
   transition: filter 0.3s ease;
@@ -349,9 +352,9 @@ nav.show {
 
 /* Text */
 h3{
-  border: 1px solid #e6ffc8;
-  border-radius: 5px;
-  padding: 5px 15px;
+  border-bottom: 1px solid #b5d594;
+  border-radius: 0px;
+  padding-bottom: 5px;
   color: #e6ffc8;
 }
 h4 {
@@ -442,7 +445,14 @@ label {
   gap: 0.5rem;
   font-size: 1.2em;
   color: #e6ffc8;
-  font-family: 'Space Grotesk';
+  font-family: 'Space Mono';
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #b5d594;
+  color: white;
 }
 
 input,
@@ -451,8 +461,6 @@ textarea,
   padding: 0.75rem;
   font-size: 1em;
   font-family: 'Space Grotesk';
-  border: none;
-  border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -460,24 +468,29 @@ textarea,
 textarea {
   min-height: 30vh;
   resize: vertical;
+  background-color: transparent;
+  border: 1px solid #b5d594;
+  border-radius: 5px;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #4b54437e;
+  color: #e6ffc8;
+  opacity: 50%;
 }
 
 .submit {
-  background-color: #e6ffc8;
-  color: black;
-  transition: background-color 0.3s;
+  color: #e6ffc8;
+  background-color: transparent;
+  border: 1px solid #b5d594;
+  border-radius: 5px;
   font-family: 'Space Mono';
-  font-weight: 600;
   font-size: 1em;
+  transition-duration: 0.3s;
 }
 
 .submit:hover {
-  background-color: #b5d594;
+  scale: 1.03;
   cursor: pointer;
 }
 
@@ -501,6 +514,7 @@ footer {
   white-space: nowrap;
   transition-duration: 0.3s;
   text-decoration: none;
+  font-family: 'Space Mono';
 }
 
 .footer-link:hover {
