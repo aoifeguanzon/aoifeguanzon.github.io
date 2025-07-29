@@ -115,12 +115,12 @@ img{
 }
 
 .important{
-  border: 1px solid #e6ffc8;
+  border: 5px double #e6ffc8;
   color: #e6ffc8;
-  padding: 30px;
+  padding: 20px;
   border-radius: 5px;
   text-align: center;
-  margin: 100px;
+  margin: 75px;
   font-family: 'Space Grotesk';
 }
 
