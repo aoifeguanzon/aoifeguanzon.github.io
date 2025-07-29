@@ -480,9 +480,9 @@ textarea::placeholder {
 }
 
 .submit {
-  color: #e6ffc8;
-  background-color: transparent;
-  border: 1px solid #b5d594;
+  color: black;
+  background-color: #b5d594;
+  border: none;
   border-radius: 5px;
   font-family: 'Space Mono';
   font-size: 1em;
