@@ -115,7 +115,8 @@ img{
 }
 
 .important{
-  border: 5px double #e6ffc8;
+  border-top: 5px double #e6ffc8;
+  border-bottom: 5px double #e6ffc8;
   color: #e6ffc8;
   padding: 20px;
   border-radius: 5px;
@@ -448,11 +449,15 @@ label {
   font-family: 'Space Mono';
 }
 
-input{
+input, textarea{
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #b5d594;
   color: white;
+  transition-duration: 0.5s;
+}
+
+input{
+  border-bottom: 2px solid #b5d594;
 }
 
 input,
@@ -466,17 +471,28 @@ textarea,
 }
 
 textarea {
-  min-height: 30vh;
+  min-height: 300px;
   resize: vertical;
-  background-color: transparent;
-  border: 1px solid #b5d594;
-  border-radius: 5px;
+  border: 2px solid #b5d594;
+}
+
+input:hover, textarea:hover{
+  border-color: white;
+}
+
+input:focus, textarea:focus{
+  outline: none;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #e6ffc8;
   opacity: 50%;
+  transition-duration: 0.5s;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  opacity: 1;
 }
 
 .submit {
