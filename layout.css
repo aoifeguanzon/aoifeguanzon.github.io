@@ -381,6 +381,21 @@ nav.show {
   break-inside: avoid;
 }
 
+.image-grid-1 p, .image-grid-2 p, .image-grid-3 p {
+  font-family: 'Space Mono';
+  font-weight: 700;
+  width: 80%;
+  border-top: solid white;
+  color: #b5d594;
+  padding: 0.5rem 0.5rem 0 0;
+}
+
+@media (max-width: 768px){
+  .image-grid-2, .image-grid-3{
+    column-count: 1;
+  }
+}
+
 
 /* Text */
 h3{
@@ -406,6 +421,7 @@ p, li {
 }
 ol {
   list-style-type:disc;
+  padding: 0 20px;
 }
 ol li::marker {
   color: #e6ffc8;
