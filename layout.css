@@ -584,8 +584,13 @@ footer {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  justify-items: center;
 }
 
 .head-content img{
   width: 30vw;
+}
+
+.head-content p{
+  width: 60%;
 }
