@@ -125,6 +125,33 @@ img{
   font-family: 'Space Grotesk';
 }
 
+.top {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Space Grotesk';
+}
+
+.top a {
+  text-decoration: none;
+  opacity: 0.5;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  border-bottom: solid #e6ffc8;
+  transition-duration: 0.2s;
+}
+
+.top a:hover {
+  text-decoration: none;
+  color: #e6ffc8;
+  border-bottom: solid white;
+  opacity: 1;
+}
+
 /* Navigation */
 nav {
   display: flex;
@@ -252,15 +279,19 @@ nav.show {
   text-align: center;
   font-weight: 500;
   gap: 0.5rem;
+  transition: transform 0.3s ease;
 }
 .skills i {
   font-size: 3rem;
   color: #e6ffc8;
-  transition: transform 0.3s ease;
   margin: 0 auto;
+  transition-duration: 0.5s;
 }
-.skills li:hover i {
-  transform: scale(1.2);
+.skills li:hover i{
+  transform:rotate(360deg);
+}
+.skills li:hover {
+  transform: scale(1.3);
   color: #b5d594;
 }
 .skills li::after {
@@ -268,12 +299,13 @@ nav.show {
   margin-top: 0.5rem;
   width: 100%;
   height: 2px;
-  background-color: #b5d594;
+  background-color: #e6ffc8;
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 .skills li:hover::after {
   opacity: 1;
+  background-color: white;
 }
 @media (max-width: 768px) {
   .skills {
@@ -410,7 +442,7 @@ i {
   background-color: #b5d594;
   border: 1px solid #b5d594;
   font-size: 1em;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   border-radius: 3rem;
   transition-duration: 0.4s;
 }
@@ -420,6 +452,12 @@ i {
   color: black;
   text-decoration: none;
 }
+
+.buttons{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
 
 .social:hover{
   background-color: transparent;
@@ -505,6 +543,7 @@ textarea {
   min-height: 300px;
   resize: vertical;
   border: 2px solid #b5d594;
+  border-radius: 5px;
 }
 
 input:hover, textarea:hover{
@@ -527,19 +566,19 @@ input:hover::placeholder, textarea:hover::placeholder {
 }
 
 .submit {
-  background-color: transparent;
+  background-color: #b5d594;
   border: none;
   border: 2px solid #b5d594;
-  color: #e6ffc8;
+  color: #0f1807;
   border-radius: 5px;
   font-family: 'Space Mono';
-  font-size: 1em;
+  font-size: 1.2em;
   transition-duration: 0.3s;
 }
 
 .submit:hover {
-  color: black;
-  background-color: #b5d594;
+  color: white;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -593,4 +632,8 @@ footer {
 
 .head-content p{
   width: 60%;
+}
+
+.head-content h1{
+  color: #e6ffc8;
 }

@@ -19,23 +19,18 @@ let specialIndex = 0;
 function typeWriter() {
   if (index < introText.length) {
     textSpan.textContent = introText.substring(0, index + 1);
-
-    // Add emoji right after finishing "Hi"
     if (index === introText.length - 1 && !document.querySelector(".wave")) {
       const wave = document.createElement("span");
       wave.className = "wave";
       wave.textContent = emoji + " ";
       textSpan.appendChild(wave);
     }
-
     index++;
     setTimeout(typeWriter, 50);
-
   } else if (nameIndex < nameOnly.length) {
     nameSpan.textContent = nameOnly.substring(0, nameIndex + 1);
     nameIndex++;
     setTimeout(typeWriter, 50);
-
   } else if (specialIndex < specialName.length) {
     if (!nameSpan.querySelector('.special-name')) {
       const specialSpan = document.createElement('span');
@@ -43,12 +38,10 @@ function typeWriter() {
       specialSpan.style.color = '#e6ffc8';
       nameSpan.appendChild(specialSpan);
     }
-
     const specialSpan = nameSpan.querySelector('.special-name');
     specialSpan.textContent = specialName.substring(0, specialIndex + 1);
     specialIndex++;
     setTimeout(typeWriter, 50);
-
   } else {
     setTimeout(() => {
       desc.classList.add('show');
@@ -78,20 +71,18 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  typeWriter();
-
+  if (textSpan && nameSpan) {
+    typeWriter();
+  }
   const contentSections = document.querySelectorAll("section");
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.1
-  });
-
+  }, { threshold: 0.1 });
   contentSections.forEach(section => {
     section.classList.add("slide-up");
     observer.observe(section);
