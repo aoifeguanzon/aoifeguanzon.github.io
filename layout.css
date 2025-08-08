@@ -177,6 +177,7 @@ nav.show {
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 1rem;
+  width: min-content;
 }
 .nav-toggle:active {
   color: #b5d594;
