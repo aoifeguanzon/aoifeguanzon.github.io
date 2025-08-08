@@ -298,7 +298,7 @@ nav.show {
 }
 @media (max-width: 768px) {
   .skills {
-    gap: 1rem;
+    gap: 2rem;
   }
   .skills li {
     font-size: 1rem;
