@@ -114,17 +114,6 @@ img{
   border-radius: 10px;
 }
 
-.important{
-  border-top: 5px solid #e6ffc8;
-  border-bottom: 5px solid #e6ffc8;
-  color: white;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
-  margin: 10%;
-  font-family: 'Space Grotesk';
-}
-
 .top {
   display: block;
   margin: 1rem auto;
@@ -648,4 +637,8 @@ footer {
 
 .head-content h1{
   color: #e6ffc8;
+}
+
+.head-content p{
+  margin: 0 15%;
 }
