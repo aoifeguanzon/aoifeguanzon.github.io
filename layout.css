@@ -177,7 +177,7 @@ nav.show {
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 1rem;
-  width: min-content;
+  width: 2.5rem;
 }
 .nav-toggle:active {
   color: #b5d594;
@@ -630,6 +630,7 @@ footer {
   max-width: 100%;
   box-sizing: border-box;
   justify-items: center;
+  margin-bottom: 3rem;
 }
 
 .head-content img{
