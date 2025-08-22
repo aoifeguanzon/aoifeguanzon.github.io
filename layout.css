@@ -173,10 +173,11 @@ nav.show {
   -webkit-appearance: none;
   appearance: none;
   display: none;
-  width: 3rem;
+  width: 2.5rem;
   height: 3rem;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
   color: inherit;
   background-color: rgba(13, 23, 2, 0.3);
