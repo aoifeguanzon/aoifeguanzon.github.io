@@ -166,8 +166,8 @@ nav.show {
   color: white;
   transition-duration: 0s;
 }
-.nav-link:hover {
-  color: #e6ffc8;
+.nav-section:hover {
+  border: 2px soild #b5d594;
 }
 .nav-toggle {
   -webkit-appearance: none;
@@ -210,6 +210,8 @@ nav.show {
   z-index: 5;
   display: none;
   transition: opacity 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   }
   .overlay.show {
     display: block;
@@ -228,23 +230,27 @@ nav.show {
   }
   nav.nav-expanded {
     background-color: #172b02;
-    border-left: 1px solid #b5d594;
     height: 100vh;
   }
 
   .nav-sections {
     display: none;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin-top: auto;
     margin-bottom: auto;
   }
   .nav-sections.show {
     display: flex;
+    gap: 5rem;
   }
   .nav-section {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .nav-toggle{
     display: flex;
@@ -309,9 +315,13 @@ nav.show {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
+
 .skills li:hover::after {
   opacity: 1;
   background-color: white;
+}
+.skills li:hover{
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .skills {
