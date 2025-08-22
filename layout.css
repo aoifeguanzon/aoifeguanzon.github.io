@@ -152,7 +152,7 @@ nav {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   max-width: 100%;
-   position: relative;
+  position: relative;
 }
 nav.show {
   opacity: 1;
@@ -164,10 +164,11 @@ nav.show {
 }
 .nav-link {
   color: white;
-  transition-duration: 0s;
+  transition-duration: 0.3s;
 }
-.nav-section:hover {
-  border: 2px soild #b5d594;
+.nav-section:hover .nav-link{
+  text-decoration: none;
+  color: #e6ffc8;
 }
 .nav-toggle {
   -webkit-appearance: none;
@@ -191,12 +192,12 @@ nav.show {
 }
 @media (min-width: 1200px) {
   .nav-section{
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px solid transparent;
     transition-duration: 0.3s;
   }
   .nav-section:hover{
-    background-color: #172b02;
+    border-bottom: 1px solid #b5d594;
   }
 }
 @media (max-width: 1200px) {
