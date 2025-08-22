@@ -152,6 +152,7 @@ nav {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   max-width: 100%;
+   position: relative;
 }
 nav.show {
   opacity: 1;
@@ -170,17 +171,13 @@ nav.show {
 }
 .nav-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 3rem;
   color: inherit;
   background-color: rgba(13, 23, 2, 0.3);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  margin: 1rem;
-  text-align: center;
-}
-.nav-toggle:active {
-  color: #b5d594;
+
 }
 .nav-sections {
   display: flex;
@@ -229,7 +226,10 @@ nav.show {
   }
   .nav-toggle {
     display: block;
-    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
   }
   .nav-sections {
     display: none;
