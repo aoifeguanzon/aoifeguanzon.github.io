@@ -402,7 +402,7 @@ nav.show {
   font-family: 'Space Mono';
   font-weight: 700;
   width: 80%;
-  border-top: solid white;
+  border-top: 1px solid white;
   color: #b5d594;
   padding: 0.5rem 0.5rem 0 0;
 }
