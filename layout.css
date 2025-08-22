@@ -170,14 +170,19 @@ nav.show {
   color: #e6ffc8;
 }
 .nav-toggle {
+  -webkit-appearance: none;
+  appearance: none;
   display: none;
-  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   color: inherit;
   background-color: rgba(13, 23, 2, 0.3);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-
 }
 .nav-sections {
   display: flex;
