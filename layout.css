@@ -192,6 +192,8 @@ nav.show {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: none;
+  margin: none;
 }
 .nav-sections {
   display: flex;
