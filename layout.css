@@ -95,7 +95,7 @@ header {
   }
 
   .intro, .desc {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -114,6 +114,12 @@ img{
   border-radius: 10px;
 }
 
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
 .top {
   display: block;
   margin: 1rem auto;
@@ -124,6 +130,10 @@ img{
   cursor: pointer;
   font-size: 1rem;
   font-family: 'Space Grotesk';
+}
+
+.top:hover{
+  animation: bounce 0.5s ease infinite;
 }
 
 .top a {
@@ -174,16 +184,13 @@ nav.show {
   -webkit-appearance: none;
   appearance: none;
   display: none;
-  width: 2.5rem;
-  height: 3rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: calc(3vw + 1em);
   color: inherit;
   background-color: transparent;
   border: none;
-  border-radius: 0.5rem;
   cursor: pointer;
 }
 .nav-sections {
@@ -260,12 +267,9 @@ nav.show {
 
 /* Skills */
   @keyframes shake {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-3px); }
-    40% { transform: translateX(3px); }
-    60% { transform: translateX(-3px); }
-    80% { transform: translateX(3px); }
-    100% { transform: translateX(0); }
+    0% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
   }
 
   @keyframes rotate {
@@ -307,6 +311,11 @@ nav.show {
   animation: rotate 1s infinite;
 }
 
+.skills li:hover i{
+  animation: shake 0.2s infinite ease-in-out;
+  color: white;
+}
+
 .skills li::after {
   content: '';
   margin-top: 0.5rem;
@@ -343,8 +352,10 @@ nav.show {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -355,10 +366,15 @@ nav.show {
   object-fit: cover;
   display: block;
   transition: filter 0.3s ease;
+  overflow: hidden;
 }
 
 .card img:hover {
   filter: brightness(50%) blur(2px);
+}
+
+.card p{
+  margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -398,7 +414,7 @@ nav.show {
   break-inside: avoid;
 }
 
-.image-grid-1 p, .image-grid-2 p, .image-grid-3 p {
+.image-grid-1 p, .image-grid-2 p, .image-grid-3 p{
   font-family: 'Space Mono';
   font-weight: 700;
   width: 80%;
@@ -471,37 +487,70 @@ i {
 }
 
 /* Homepage */
-.social{
-  background-color: #b5d594;
-  border: 1px solid #b5d594;
-  font-size: 1em;
+.tabs {
+  display: flex;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px){
+  .tabs {
+  flex-direction: column;
+  gap: 0;
+}
+.tab-btn{
+  text-align: left;
+}
+}
+
+.tab-btn {
+  position: relative;
   padding: 0.1rem 1rem;
-  border-radius: 3rem;
-  transition-duration: 0.4s;
-}
-
-.social a{
-  font-family: 'Space Mono';
-  color: black;
-  text-decoration: none;
-}
-
-.buttons{
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-.social:hover{
+  cursor: pointer;
+  border: 1px solid #b5d594;
   background-color: transparent;
-}
-
-.social:hover a{
   color: white;
+  font-size: 1em;
+  font-family: 'Space Mono', monospace;
+  transition: color 0.4s ease;
 }
 
-#design{
-  margin-bottom: 1rem;
+/* sliding background */
+.tab-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #b5d594;
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.tab-btn:hover::before {
+  width: 100%;
+}
+
+.tab-btn:hover{
+  color: black;
+}
+
+.tab-btn.active::before {
+  width: 100%;
+}
+
+.tab-btn.active{
+  color: black;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 1rem;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 /* Contact Section */
@@ -666,3 +715,35 @@ footer {
 .head-content p{
   margin: 0 15%;
 }
+
+/* Experience */
+.job-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-heading img{
+  width: 20%;
+}
+
+@media (max-width: 1024px){
+  .job-heading{
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  .job-heading span{
+    margin-bottom: 1rem;
+  }
+
+  .job-desc img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .job-desc{
+    flex-direction: column;
+  }
+}
+

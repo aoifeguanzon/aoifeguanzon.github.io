@@ -6,6 +6,8 @@ const toggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelectorAll('.nav-sections a');
 const navSections = document.querySelector('.nav-sections');
 const overlay = document.getElementById('overlay');
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
 
 const introText = "Hi ";
 const nameOnly = " my name is ";
@@ -86,5 +88,21 @@ window.addEventListener('DOMContentLoaded', () => {
   contentSections.forEach(section => {
     section.classList.add("slide-up");
     observer.observe(section);
+  });
+});
+
+document.querySelectorAll("section").forEach(section => {
+  const tabBtns = section.querySelectorAll(".tab-btn");
+  const tabContents = section.querySelectorAll(".tab-content");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabBtns.forEach(b => b.classList.remove("active"));
+      tabContents.forEach(c => c.classList.remove("active"));
+
+      btn.classList.add("active");
+      const tabId = btn.dataset.tab;
+      section.querySelector(`#${tabId}`).classList.add("active");
+    });
   });
 });

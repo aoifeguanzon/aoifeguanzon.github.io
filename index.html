@@ -29,15 +29,15 @@
                 <div class="nav-sections">
                     <span class="nav-section">
                         <span class="number">01.</span>
-                        <a href="#about" class="nav-link">About Me</a>
+                        <a href="#about" class="nav-link">About</a>
                     </span>
                     <span class="nav-section">
                         <span class="number">02.</span>
-                        <a href="#design" class="nav-link">Design Work</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </span>
                     <span class="nav-section">
                         <span class="number">03.</span>
-                        <a href="#coding" class="nav-link">Coding Projects</a>
+                        <a href="#experience" class="nav-link">Experience</a>
                     </span>
                     <span class="nav-section">
                         <span class="number">04.</span>
@@ -56,7 +56,7 @@
 
         <div class="content">
             <section id="about">
-                <h2><span class="number">01.</span>About me</h2>
+                <h2><span class="number">01.</span>About</h2>
                 <p>I'm a <span class="green">Computer Science student</span> in Dublin who is focused on full-stack development and design.
                     I'm always looking to create, whether it's building a new app or making social content.
                     I'm deeply passionate about leveraging technology to bring communities together and tackle global issues like climate change.
@@ -66,88 +66,108 @@
 
                     <br><br>I'm also the <span class="green">Public Relations Officer of DCU Orchestra</span>. I manage our online presence, uphold a consistent brand identity and design all our social content.
                     I'm currently developing visual assets to prepare for the orchestra's next season.
+
+                    <br><br>When I'm not staring at a screen I'm travelling, volunteering or making music.
                 </p>
-                <br><h3>Technical skills</h3>
-                <div class="skills-container">
-                    <ul class="skills">
-                        <li><i class="fa-brands fa-python"></i>Python</li>
-                        <li><i class="fa-brands fa-js"></i>Javascript</li>
-                        <li><i class="fa-brands fa-react"></i>React</li>
-                        <li><i class="fa-brands fa-swift"></i>Swift</li>
-                        <li><i class="lni lni-typescript"></i>Typescript</li>
-                        <li><i class="fa-brands fa-html5"></i>HTML</li>
-                        <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
-                        <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
-                        <li><i class="fa-brands fa-git"></i>Git</li>
-                        <li><i class="fa-brands fa-linux"></i>Linux</li>
-                        <li><i class="lni lni-dollar"></i>Bash</li>
-                        <li><i class="lni lni-tailwindcss"></i>Tailwind</li>
-                        <li><i class="lni lni-nextjs"></i>Next.js</li>
-                        <li><i class="fa-solid fa-database"></i>SQL</li>
-                    </ul>
-                </div>
-                <br><h3>Platforms and tools</h3>
-                <div class="skills-container">
-                    <ul class="skills">
-                        <li><i class="fa-brands fa-figma"></i>Figma</li>
-                        <li><i class="fa-brands fa-trello"></i>Trello</li>
-                        <li><i class="fa-brands fa-slack"></i>Slack</li>
-                        <li><i class="lni lni-firebase"></i>Firebase</li>
-                        <li><i class="fa-brands fa-aws"></i>AWS</li>
-                        <li><i class="lni lni-notion"></i>Notion</li>
-                        <li><i class="fa-brands fa-wordpress"></i>WordPress</li>
-                        <li><i class="lni lni-canva"></i>Canva</li>
-                        <li><i class="fa-brands fa-github"></i>Github</li>
-                        <li><i class="fa-brands fa-microsoft"></i>Office</li>
-                        <li><i class="fa-brands fa-google"></i>Workspace</li>
-                        <li><i class="lni lni-vite"></i>Vite</li>
-                        <li><i class="fa-brands fa-docker"></i>Docker</li>
-                    </ul>
-                </div>
             </section>
 
-            <section id="design">
-                <h2><span class="number">02.</span>Designs</h2>
-                <div class="card-grid">
-                    <div>
-                        <a class="card" href="dcuo.html"><img src="./img/dcuo-primary-logo-1.png" alt="DCU Orchestra preview"></a>
-                        <h3>DCU Orchestra</h3>
-                        <div class="buttons">
-                            <button class="social">
-                                <a href="https://www.instagram.com/dcuorchestra/">Instagram</a>
-                            </button>
-                            <button class="social">
-                                <a href="https://www.linkedin.com/company/dcuorchestra/">Linkedin</a>
-                            </button>
+            <section id="projects">
+                <h2><span class="number">02.</span>Projects</h2>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="design">Design</button>
+                    <button class="tab-btn" data-tab="code">Code</button>
+                </div>
+
+                <div class="tab-content active" id="design">
+                    <div class="card-grid">
+
+                        <div class="card">
+                            <a href="dcuo.html"><img src="./img/dcuo-primary-logo-1.png" alt="DCU Orchestra preview"></a>
+                            <h3>DCU Orchestra</h3>
+                                <p>Brand identity development, creative direction, logo design, print assets, social content, post templates, event branding and promotional materials.</p>
                         </div>
-                        <p>Brand identity development, creative direction, logo design, print assets, social content, post templates, event branding and promotional materials.</p>
-                    </div>
-                    <div>
-                        <a class="card" href="rewear.html"><img src='./img/rewear-square-logo.png'></a>
-                        <h3>ReWear</h3>
-                        <div class="buttons">
-                            <button class="social">
-                                <a href="https://www.linkedin.com/in/aoifeguanzon/">Linkedin</a>
-                            </button>
+
+                        <div class="card">
+                            <a href="rewear.html"><img src='./img/rewear-square-logo.png'></a>
+                            <h3>ReWear</h3>
+                            <p>Brand identity development, event branding and user interface design.</p>
                         </div>
-                        <p>Brand identity development, event branding and user interface design.
-                        </p>
                     </div>
                 </div>
+
+                <div class="tab-content" id="code">
+                    <div class="card-grid">
+                        <div class="card">
+                            <a href="rewear-app.html"><img src='./img/rewear-square-logo.png'></a>
+                            <h3>ReWear</h3>
+                            <p>Shopping assistant web app that helps people find secondhand and ethical alternatives to fast fashion, while connecting them to a global community of fashion-forward individuals.</p>
+                        </div>
+                        <div>
+                            <a class="card" href="thrivetrack.html"><img src='./img/thrivetrack.png'></a>
+                            <h3>ThriveTrack</h3>
+                            <p>Mood and step tracker that lets users set goals, log their mood, and receive personalised feedback based on physical activity and emotional changes.</p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
-            <section id="coding">
-                <h2><span class="number">03.</span>Projects</h2>
-                <div class="card-grid">
-                    <div>
-                        <a class="card" href="rewear-app.html"><img src='./img/rewear-square-logo.png'></a>
-                        <h3>ReWear</h3>
-                        <p>Shopping assistant web app that helps people find secondhand and ethical alternatives to fast fashion, while connecting them to a global community of fashion-forward individuals.</p>
+            <section id="experience">
+                <h2><span class="number">03.</span>Experience</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="dcuo">DCU Orchestra</button>
+                    <button class="tab-btn" data-tab="dcusu">DCU Students' Union</button>
+                    <button class="tab-btn" data-tab="dcusc">DCU School of Computing</button>
+                </div>
+
+                <div class="tab-content active" id="dcuo">
+                    <div class='job-heading'>
+                        <h3>Public Relations Officer</h3>
+                        <span>April 2025 - Present</span>
                     </div>
-                    <div>
-                        <a class="card" href="thrivetrack.html"><img src='./img/thrivetrack.png'></a>
-                        <h3>ThriveTrack</h3>
-                        <p>Mood and step tracker that lets users set goals, log their mood, and receive personalised feedback based on physical activity and emotional changes.</p>
+                    <div class="job-desc" style="display: flex; gap: 1rem">
+                        <img style="width: 50%; height: 80%;" src="img/pro.jpeg">
+                        <ol>
+                            <li>Drove 70% increase in engagement in the first week by sharing targeted content on social media.</li>
+                            <li>Plan collaborations with other societies to expand reach and impact.</li>
+                            <li>Use agile sprints with Trello to plan and deliver high-quality visual assets with Figma and Canva.</li>
+                            <li>Redesigned the society’s brand identity to ensure a consistent visual presence.</li>
+                            <li>Develop marketing campaigns to promote events and initiatives, creating both digital and physical promotional materials.</li>
+
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="dcusu">
+                    <div class='job-heading'>
+                        <h3>Student Representative</h3>
+                        <span>September 2024 - Present</span>
+                    </div>
+                    <div class="job-desc" style="display: flex; gap: 1rem">
+                        <img style="width: 100%; height: 15rem; object-fit: cover;" src="img/classrep.jpeg">
+                        <ol>
+                            <li>Designed proposals with Google Workspace to improve student experiences and campus resources.</li>
+                            <li>Gathered and presented feedback to faculty using Microsoft Office to influence improvements for students.</li>
+                            <li>Managed an online community platform where coursemates regularly connect and receive course announcements.</li>
+                            <li>Earned the NStEP Introductory Class Rep Training certification.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="dcusc">
+                    <div class='job-heading'>
+                        <h3>Lab Assistant</h3>
+                        <span>May 2025</span>
+                    </div>
+                    <div class="job-desc" style="display: flex; gap: 1rem;">
+                        <img style="width: 50%;" src="img/computety.jpeg">
+                        <ol>
+                            <li>Co-led programming workshops for Transition Year students, guiding them through daily coding tasks and building confidence in Python.</li>
+                            <li>Delivered coding demos to show students how to create Python scripts in different editors such as IDLE, VSCode and PyCharm.</li>
+                            <li>Led live sessions on programming micro:bits with both Python and block coding.</li>
+                            <li>Designed multiple coding challenges on Google Colab.</li>
+                        </ol>
                     </div>
                 </div>
 
@@ -159,7 +179,7 @@
 
             <section id="contact">
                 <div class="section-inner">
-                    <h2><span class="number">04.</span>Let's connect!</h2>
+                    <h2><span class="number">05.</span>Let's connect!</h2>
                     <p>Have a question, comment or idea? Please reach out below 👇🏼</p>
                     <div class="form-container">
                     <form action="https://formspree.io/f/mldjrppw" method="POST">
