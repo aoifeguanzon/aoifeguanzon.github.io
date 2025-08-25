@@ -140,7 +140,6 @@ img{
 
 .top:hover{
   animation: bounce 0.8s ease infinite;
-  animation-delay: 0.5s;
 }
 
 .top a {
@@ -367,11 +366,17 @@ nav.show {
 .tools{
   font-family: 'Space Mono';
   margin-top: 1rem;
-  color: #b5d594;
+  color: white;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  row-gap: 0.5rem;
+}
+
+.tools p{
+  background-color: #0f1807;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition-duration: 0.3s;
 }
 
 @media (max-width: 1024px){
@@ -757,8 +762,15 @@ footer {
   margin-bottom: 3rem;
 }
 
+
 .head-content img{
   width: 30vw;
+}
+
+@media (max-width: 1024px){
+  .head-content img{
+    width: 100%
+  }
 }
 
 .head-content h1{
@@ -788,6 +800,10 @@ footer {
 
   .job-heading span{
     margin-bottom: 1rem;
+  }
+
+  .job-heading h3{
+    margin-top: 0;
   }
 
   .job-desc img{
