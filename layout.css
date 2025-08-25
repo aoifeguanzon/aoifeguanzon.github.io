@@ -116,7 +116,7 @@ img{
 
 @keyframes bounce {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
+  50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
 
@@ -134,12 +134,13 @@ img{
 
 @media (max-width: 1024px) {
   .top{
-    animation: bounce 0.5s ease infinite;
+    animation: bounce 0.8s ease infinite;
   }
 }
 
 .top:hover{
-  animation: bounce 0.5s ease infinite;
+  animation: bounce 0.8s ease infinite;
+  animation-delay: 0.5s;
 }
 
 .top a {
@@ -220,7 +221,7 @@ nav.show {
 }
 
 .nav-section:hover::after {
-  width: 100%;
+  width: 110%;
 }
 
 }
@@ -606,17 +607,24 @@ section#contact {
 body #contact {
   background-color: #0f1807;
   width: 100%;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 #contact .section-inner {
   margin: 0 15%;
 }
 
+@media (max-width: 1024px){
+  section, #contact .section-inner {
+  margin: 0 5%;
+}
+}
+
 #contact h2,
 #contact p {
   color: white;
   text-align: left;
+  margin-top: 0;
 }
 
 .form-container {
