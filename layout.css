@@ -746,6 +746,7 @@ footer {
 
   .job-desc{
     flex-direction: column;
+    gap: 0 !important;
   }
 }
 
