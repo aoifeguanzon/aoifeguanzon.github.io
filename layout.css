@@ -132,6 +132,12 @@ img{
   font-family: 'Space Grotesk';
 }
 
+@media (max-width: 1024px) {
+  .top{
+    animation: bounce 0.5s ease infinite;
+  }
+}
+
 .top:hover{
   animation: bounce 0.5s ease infinite;
 }
@@ -190,8 +196,8 @@ nav.show {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0;
 }
 .nav-sections {
   display: flex;
@@ -367,6 +373,12 @@ nav.show {
   row-gap: 0.5rem;
 }
 
+@media (max-width: 1024px){
+  .tools{
+  margin-top: 0.5rem;
+  }
+}
+
 /* Grids and images */
 .card-grid {
   display: grid;
@@ -517,7 +529,7 @@ i {
 @media (max-width: 1024px){
   .tabs {
   flex-direction: column;
-  gap: 0;
+  gap: 0rem;
 }
 .tab-btn{
   text-align: left;
@@ -544,9 +556,15 @@ i {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: white;
+  background-color: #b5d594;
   z-index: -1;
   transition: width 0.5s ease;
+}
+
+@media (min-width: 1024px){
+  .tab-btn::before{
+  background-color: white;
+  }
 }
 
 .tab-btn:hover::before {
@@ -770,8 +788,14 @@ footer {
   }
 
   .job-desc{
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 0 !important;
+  }
+
+  .job-desc ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
