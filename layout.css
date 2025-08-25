@@ -267,7 +267,7 @@ nav.show {
   }
 }
 
-/* Skills */
+/* Skills and tools */
   @keyframes shake {
     0% { transform: rotate(-3deg); }
     50% { transform: rotate(3deg); }
@@ -346,6 +346,16 @@ nav.show {
     font-size: smaller;
     padding: 0;
   }
+}
+
+.tools{
+  font-family: 'Space Mono';
+  margin-top: 1rem;
+  color: #b5d594;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
 
 /* Grids and images */
