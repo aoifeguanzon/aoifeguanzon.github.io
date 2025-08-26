@@ -771,6 +771,10 @@ footer {
   .head-content img{
     width: 100%
   }
+
+  .head-content p{
+    width: 100%
+  }
 }
 
 .head-content h1{
