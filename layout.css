@@ -446,20 +446,29 @@ nav.show {
   column-gap: 0.5rem;
 }
 
-.image-grid-1 img, .image-grid-2 img, .image-grid-3 img {
+.image-grid-1 img,
+.image-grid-2 img,
+.image-grid-3 img {
   width: 100%;
-  margin-bottom: 0.5rem;
   display: block;
   break-inside: avoid;
+  margin-bottom: 0.25rem;
 }
 
-.image-grid-1 p, .image-grid-2 p, .image-grid-3 p{
-  font-family: 'Space Mono';
+.image-grid-1 p,
+.image-grid-2 p,
+.image-grid-3 p {
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
-  width: 80%;
-  border-top: 1px solid white;
   color: #b5d594;
-  padding: 0.5rem 0.5rem 0 0;
+  border-top: 1px solid white;
+  width: 75%;
+  padding-top: 0.25rem;
+  margin: 0.5rem 0 1rem 0;
+  break-inside: avoid;
+  display: block;
+  text-align: center;
+  justify-self: center;
 }
 
 @media (max-width: 768px){
