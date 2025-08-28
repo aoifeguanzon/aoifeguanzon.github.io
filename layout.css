@@ -431,19 +431,24 @@ nav.show {
     width: 100%;
   }
 }
+
+.image-grid-1, .image-grid-2, .image-grid-3{
+  column-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image-grid-1 {
   column-count: 1;
-  column-gap: 0.5rem;
 }
 
 .image-grid-2 {
   column-count: 2;
-  column-gap: 0.5rem;
 }
 
 .image-grid-3 {
   column-count: 3;
-  column-gap: 0.5rem;
 }
 
 .image-grid-1 img,
