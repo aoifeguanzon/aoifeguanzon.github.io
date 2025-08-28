@@ -448,7 +448,10 @@ nav.show {
 
 .image-grid-1 img,
 .image-grid-2 img,
-.image-grid-3 img {
+.image-grid-3 img,
+.image-grid-1 video,
+.image-grid-2 video,
+.image-grid-3 video{
   width: 100%;
   display: block;
   break-inside: avoid;
