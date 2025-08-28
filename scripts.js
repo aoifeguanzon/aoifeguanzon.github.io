@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.1, rootMargin: "0px 0px -100px 0px" });
   contentSections.forEach(section => {
     section.classList.add("slide-up");
     observer.observe(section);
