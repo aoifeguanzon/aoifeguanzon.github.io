@@ -116,7 +116,7 @@ img{
 
 @keyframes bounce {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
   100% { transform: translateY(0px); }
 }
 
@@ -130,15 +130,6 @@ img{
   cursor: pointer;
   font-size: 1rem;
   font-family: 'Space Grotesk';
-}
-
-@media (max-width: 1024px) {
-  .top{
-    animation: bounce 0.8s ease infinite;
-  }
-}
-
-.top:hover{
   animation: bounce 0.8s ease infinite;
 }
 
@@ -467,7 +458,7 @@ nav.show {
   font-weight: 700;
   color: #b5d594;
   border-top: 1px solid white;
-  width: 75%;
+  width: 85%;
   padding-top: 0.25rem;
   margin: 0.5rem auto 1rem auto;
   break-inside: avoid;
